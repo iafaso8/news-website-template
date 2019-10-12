@@ -5,7 +5,7 @@ This template is created by using: HTML, CSS, Bootstrap, JavaScript, jQuery and 
 
 ## How to run it?
 
-To use this project you should have installed a web server (such as Apache), PHP and MySQL database. 
+To use this project you should have installed a web server (such as Apache) and PHP. 
  * Download the project and put it in the the required directory;
  * To run open the main file - index.php.
 
