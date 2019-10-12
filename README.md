@@ -10,4 +10,4 @@ To use this project you should have installed a web server (such as Apache) and 
  * To run open the main file - index.php.
 
 
-If you have any questions or recommendations for the project, please [create an issue](https://github.com/VaniaYankulova/news-website-template/issues/new) or text me on the email: vania.yankulova@gmail.com.
+If you have any questions or recommendations for the project, please [create an issue](https://github.com/iafaso8/news-website-template/issues/new) or text me on the email: vania.yankulova@gmail.com.
