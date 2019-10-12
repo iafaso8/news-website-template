@@ -1,0 +1,455 @@
+/* BASIC */
+  body {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 16px;
+  }
+  div.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* SCROLL SMOOTH */
+  html { 
+    scroll-behavior: smooth; 
+  }
+  /* SCROLL SMOOTH */
+
+  /* FADEIN-LEFT-QUICKLY - QUICKLY FADEIN FROM LEFT   */
+  /* FADEIN-LEFT-SLOWLY - SLOWLY FADEIN FROM LEFT  */
+  .fadein-left-slowly, .fadein-left-quickly {
+    z-index: -1;
+    opacity: 0; 
+    position: relative; 
+    left: -300px;
+  }
+  /* FADEIN-LEFT-SLOWLY - SLOWLY FADEIN FROM LEFT  */
+  /* FADEIN-LEFT-QUICKLY - QUICKLY FADEIN FROM LEFT   */
+
+  /* FADEIN */
+  .fadein {
+    z-index: -1;
+    opacity: 0; 
+    position: relative;
+  }
+  /* FADEIN */
+/* BASIC */
+
+
+/* MENU */
+  /* MENU BIG SCREEN */
+    nav#nav-big-screen {
+      z-index: 3;
+      background-color: rgba(38, 21, 41, 0.9);
+      height: 60px;
+      transition: height 1s, font-size 1s, background-color 1s;
+    }
+    nav#nav-big-screen:hover {
+      background-color: rgba(38, 21, 41, 1);
+      height: 70px;
+      font-size: 18px;
+      transition: height 1s, font-size 1s, background-color 1s;
+    }
+    nav#nav-big-screen .nav-link {
+      margin-left: 20px;
+      position: relative;
+      color: rgb(255, 255, 255);
+    }
+    
+    /* UNDERINE LINK WITH ANIMATION WHEN HOVER  */
+    nav#nav-big-screen .nav-link:after{
+      content: '';
+      position: absolute;
+      width: 0; height: 1px;
+      display: block;
+      margin-top: 5px;
+      right: 0;
+      background: #fff;
+      transition: width .4s ease;
+      -webkit-transition: width .4s ease;
+    }
+    nav#nav-big-screen .nav-link:hover:after{
+      width: 100%;
+      left: 0;
+      background: rgb(255, 255, 255);
+    }
+    nav#nav-big-screen li:first-of-type .nav-link::after {
+      content: none;
+    }
+    /* UNDERINE LINK WITH ANIMATION WHEN HOVER  */
+    
+    nav#nav-big-screen .navbar-brand {
+      position: absolute;
+      right: 10px;
+      top: -3px;
+    }
+  /* MENU BIG SCREEN */
+
+  /* MENU MOBILE */
+    nav#nav-mobile {
+      background-color: rgba(38, 21, 41, 0.9);
+    }
+  /* MENU MOBILE */
+
+  /* WHEN WHICH MENU TO SHOW */
+  /* @media only screen and (min-width: 700px) and (max-width: 1300px) { */
+  @media only screen and (min-width: 620px) {
+    nav#nav-mobile {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 620px) {
+    nav#nav-big-screen {
+      display: none;
+    }
+  }
+  /* WHEN WHICH MENU TO SHOW */
+
+/* MENU */
+    
+
+
+
+/* INDEX PAGE */
+  main {
+    background-color: rgb(219, 227, 230);
+  }
+  /* MODULE 6 SLIDESHOW IMAGES */
+  main #module6 {
+    position: relative;
+    top: -50px;
+    z-index: 2;
+  }
+  main #module6 .carousel-inner img {
+    width: 100%;
+    max-height: 500px;
+  }
+  main #module6 .carousel-caption {
+    background-color: rgba(38, 21, 41, 0.7);
+    width: 100%;
+    left: 0px;
+  }
+  main div#module6 .read-more-btn {
+    background-color: rgb(192, 86, 0);
+    border: 0px;
+  }
+  main div#module6 .read-more-btn:hover {
+    background-color: rgb(58, 80, 114);
+  }
+  main #module6 .carousel-control-prev-icon, main #module6 .carousel-control-next-icon {
+    background-image: none;
+    font-size: 70px;
+    position: relative;
+    top: -70px;
+    font-weight: 900;
+  }
+  /* MODULE 6 SLIDESHOW IMAGES */
+    
+  /* module 1 */
+  main #module1 {
+    position: relative;
+    top: -50px;
+    background-color: rgb(228, 209, 231);
+  }
+  main div#module1 div.bold-purple-line {
+    height: 50px;
+    background-color: rgba(38, 21, 41);
+  }
+  main div#module1 h1 {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(37, 27, 39);
+    z-index: 1;
+  }
+  main div#module1 div.purple-line {
+    height: 15px;
+    background-color: rgba(38, 21, 41);
+  }
+  /* module 1 */
+  
+  
+  /* module 2 - SLDESHOW NEWS */
+  main div#module2 div#demo2 {
+    z-index: 2;
+  }
+  main div#module2 {
+    margin: 0px;
+    position: relative;
+    top: -30px;
+  }
+  main div#module2 .fadein-class {
+    z-index: 1;
+  }
+  main div#module2 .header-line-left {
+    height: 30px;
+    width: 15%;
+    position: relative;
+    top: 10px;
+    float: left;
+    background-color: rgba(38, 21, 41);
+    display: inline-block;
+  }
+  main div#module2 h1 {
+    color: rgba(38, 21, 41);
+    padding-left: 3%;
+    display: inline-block;
+  }
+  main #module2 .carousel-control-prev-icon, main #module2 .carousel-control-next-icon {
+    background-image: none;
+    font-size: 70px;
+    position: relative;
+    top: -70px;
+    font-weight: 900;
+  }
+  main div#module2 .header-line-right {
+    height: 30px;
+    width: 40%;
+    position: relative;
+    top: 10px;
+    float: right;
+    background-color: rgba(38, 21, 41);
+    display: inline-block;
+  }
+  @media only screen and (max-width: 700px) {
+    main div#module2 .header-line-right, main div#module2 .header-line-left {
+      display: none;
+    }
+  }
+  main div#module2 div {
+    padding: 0px;
+    text-align: center;
+  }
+  main div#module2 .card {
+    height: 400px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+  }
+  main div#module2 .card:hover {
+    height: 400px;
+    margin: 20px;
+    background-color: rgba(38, 21, 41, 0.253);
+    border: 0px;
+    color: #fff;
+  }
+  main div#module2 img {
+    height: 250px;
+    border-radius: 10px;
+  }
+  main div#module2 .read-more-btn {
+    background-color: rgb(192, 86, 0);
+    border: 0px;
+  }
+  main div#module2 .read-more-btn:hover {
+    background-color: rgb(58, 80, 114);
+  }
+  main div#module2 #button-div {
+    z-index: 1;
+  }
+  main div#module2 #button-div a {
+    text-align: center;
+  }
+  /* module 2 - SLIDESHOW NEWS */
+
+
+  /* module 3 - BACKGROUND VIDEO */
+  main #module3 {
+    max-height: 600px;
+    text-align: center;
+  }
+  main #module3 video#background-video {
+    width: 100%;
+    opacity: 0.8;
+  }
+  main #module3 h1#module3-text {
+    font-weight: bold;
+    text-align: center;
+    color: rgba(38, 21, 41, 0.6);
+    z-index: 1;
+  }
+
+  /* module3 TEXT ON DIFFERENT SCREENS */
+  main #module3 #read-more {
+    position: relative;
+    float: center;
+    border-radius: 10px;
+  }
+  @media only screen and (min-width: 1300px) {
+    main #module3 h1#module3-text {
+      font-size: 80px;
+      position: relative;
+      top: -650px;
+    }
+    main #module3 #read-more {
+      top: -600px;
+    }
+  }
+  @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+    main #module3 h1#module3-text {
+      font-size: 80px;
+      position: relative;
+      top: -500px;
+    }
+    main #module3 #read-more {
+      top: -450px;
+    }
+  }
+  @media only screen and (min-width: 750px) and (max-width: 1000px) {
+    main #module3 h1#module3-text {
+      font-size: 60px;
+      position: relative;
+      top: -400px;
+    }
+    main #module3 #read-more {
+      top: -350px;
+    }
+  }
+  @media only screen and (min-width: 530px) and (max-width: 750px) {
+    main #module3 h1#module3-text {
+      font-size: 40px;
+      position: relative;
+      top: -300px;
+    }
+    main #module3 #read-more {
+      top: -250px;
+    }
+  }
+  @media only screen and (max-width: 530px) {
+    main #module3 h1#module3-text {
+      display: none;
+    }
+    main #module3 #read-more {
+      display: none;      
+    }
+  }
+  /* module3 TEXT ON DIFFERENT SCREENS */
+  /* module 3 - BACKGROUND VIDEO */
+
+
+  /* module 4 - WHO ARE WE? */
+  main #module4 {
+    text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+  }
+  
+  main div#module4 .fadein-class {
+    z-index: 1;
+  }
+  main div#module4 .header-line-left {
+    height: 30px;
+    width: 15%;
+    position: relative;
+    top: 10px;
+    float: left;
+    background-color: rgba(38, 21, 41);
+    display: inline-block;
+  }
+  main div#module4 h1 {
+    color: rgba(38, 21, 41);
+    padding-left: 3%;
+    display: inline-block;
+  }
+  main div#module4 .header-line-right {
+    height: 30px;
+    width: 40%;
+    position: relative;
+    top: 10px;
+    float: right;
+    background-color: rgba(38, 21, 41);
+    display: inline-block;
+  }
+  @media only screen and (max-width: 700px) {
+    main div#module4 .header-line-right, main div#module4 .header-line-left {
+      display: none;
+    }
+  }
+  main #module4 .row {
+    margin: 0px;
+  }
+  main #module4 .row .col-lg-8 {
+    margin-top: 100px;
+  }
+  main #module4 h2 {
+    color: rgba(38, 21, 41);
+    box-shadow: 0px 0px 10px rgba(38, 21, 41);
+    text-shadow: 0px 0px 5px rgba(38, 21, 41);
+    background-color: rgb(228, 209, 231);
+  }
+  main #module4 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 8px rgba(38, 21, 41);
+  }
+  @media only screen and (max-width: 1000px) {
+    main #module4 img {
+      width: 240px;
+      height: 300px;
+      margin-top: 20px;
+    }
+  }
+  main #module4 .row div{
+    z-index: 1;
+  }
+  main #module4 .info-in-border-rabius-box1 {
+    background-color: rgba(38, 21, 41);
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    padding: 50px;
+    color: #fff;
+    box-shadow: 10px 10px 10px rgba(38, 21, 41);
+  }
+  main #module4 .info-in-border-rabius-box2 {
+    background-color: rgba(38, 21, 41, 0.541);
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  /* module 4 - WHO ARE WE? */
+
+  /* MODULE7 CONTACT FORM AND CONTACT INFO */
+  main div#module7 {
+    margin: 20px;
+    margin-top: 50px;
+  }
+  main div#module7 .row {
+    width: 100%;
+  }
+  main div#module7 .row .card {
+    z-index: 1;
+    margin-top: 20px;
+    height: 530px;
+  }
+  /* MODULE7 CONTACT FORM AND CONTACT INFO */
+/* INDEX PAGE */
+  
+
+/* FOOTER */
+  footer {
+    background-color: rgb(38, 21, 41);
+    font-size: 15px;
+    color: rgb(206, 215, 223);
+  }
+  footer .row {
+    padding: 30px;
+    padding-top: 60px;
+    margin: 0px;
+  }
+  footer .row a {
+    padding: 30px;
+    padding-left: 10px;
+    color: rgb(206, 215, 223);
+  }
+  footer .row a#mailto-link {
+    position: relative;
+    bottom: 7px;
+  }
+  
+  footer #copyright-info {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    /* padding-left: 10%; */
+  }
+/* FOOTER */
+  
